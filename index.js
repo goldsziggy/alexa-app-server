@@ -1,12 +1,26 @@
-var hotswap = require('hotswap');
-var fs = require('fs');
-var path = path = require('path');
-var http = require('http');
-var https = require('https');
-var express = require('express');
-var alexa = require('alexa-app');
-var Promise = require('bluebird');
-var defaults = require('lodash.defaults');
+// var hotswap = require('hotswap');
+// var fs = require('fs');
+// var path = path = require('path');
+// var http = require('http');
+// var https = require('https');
+// var express = require('express');
+// var alexa = require('alexa-app');
+// var Promise = require('bluebird');
+// var defaults = require('lodash.defaults');
+
+require("babel-register");
+import hotswap from 'hotswap';
+import fs from 'fs';
+import path from 'path';
+import http from 'http';
+import https from 'https';
+import express from 'express';
+import alexa from 'alexa-app';
+// import verifier from 'alexa-verifier';
+// import bodyParser from 'body-parser';
+import defaults from 'lodash.defaults'
+import Promise from 'bluebird';
+
 
 var appServer = function(config) {
   var self = {};
